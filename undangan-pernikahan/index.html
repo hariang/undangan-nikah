@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Undangan Pernikahan</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <audio autoplay loop controls id="bg-music" style="display: none;">
+    <source src="assets/lagu.mp3" type="audio/mp3">
+  </audio>
+
+  <section class="hero">
+    <h1>Undangan Pernikahan</h1>
+    <p>11 Januari 2025</p>
+    <h2>Ana & Budi</h2>
+    <img src="assets/foto1.jpg" alt="Foto Pasangan">
+  </section>
+
+  <section class="info">
+    <h3>Acara</h3>
+    <p>Tanggal: 11 Januari 2025</p>
+    <p>Tempat: Jl. Pahlawan, Ketapang, Kalimantan Barat</p>
+    <iframe src="https://maps.google.com/maps?q=Ketapang&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="250" style="border:0;"></iframe>
+  </section>
+
+  <section class="ucapan">
+    <h3>Ucapan Selamat</h3>
+    <form id="formUcapan">
+      <input type="text" id="nama" placeholder="Nama Anda" required>
+      <textarea id="pesan" placeholder="Ucapan Selamat" required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+    <div id="listUcapan"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
